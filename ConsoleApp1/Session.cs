@@ -48,10 +48,10 @@ namespace ConsoleApp1
                         Console.WriteLine("FirstName?:\n");
                         fname = Console.ReadLine();
                     }
-                    while (string.IsNullOrWhiteSpace(fname))
+                    while (string.IsNullOrWhiteSpace(lname))
                     {
                         Console.WriteLine("Lastname?:\n");
-                        fname = Console.ReadLine();
+                        lname = Console.ReadLine();
                     }
                     Handler.CreatePerson(fname, lname);
                         Console.WriteLine("New Person Created!");
@@ -71,10 +71,9 @@ namespace ConsoleApp1
 
         public void Displayinfo()
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\matte\Downloads\Demotext.txt");
+            
+            Console.WriteLine($"This program was created for demo purpose 2021-03-22!\n");
 
-            Console.WriteLine($"This program was created for demo purpose!\n{text}" +
-                "");
         }
     }
 }
